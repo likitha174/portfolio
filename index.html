@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Likitha | Portfolio & Resume</title>
+    <title>Likitha Pureddi | Portfolio & Resume</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background: #f4f4f9;
-            color: #333;
+            padding: 30px 15px;
+            background: #f0f2f5;
+            color: #2c3e50;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
-        .profile-header {
+        .header {
             text-align: center;
+            border-bottom: 2px solid #eef2f7;
+            padding-bottom: 25px;
             margin-bottom: 25px;
         }
         .profile-pic {
@@ -30,68 +35,243 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #0073b1;
-            margin-bottom: 15px;
+            border: 4px solid #0077b5;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto 15px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
-        h1, h2 {
-            color: #0073b1;
+        h1 {
+            margin: 5px 0;
+            color: #1a252f;
+            font-size: 2rem;
+            letter-spacing: 0.5px;
         }
-        .section {
-            margin-bottom: 25px;
+        .contact-info {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 8px;
+        }
+        .contact-info a {
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #0077b5;
+            border-bottom: 2px solid #eef2f7;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            color: #2c3e50;
+        }
+        .item-subtitle {
+            font-style: italic;
+            color: #555;
+        }
+        .item-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
         ul {
+            margin: 8px 0;
             padding-left: 20px;
         }
-        a {
-            color: #0073b1;
-            text-decoration: none;
+        li {
+            margin-bottom: 5px;
         }
-        a:hover {
-            text-decoration: underline;
+        .skills-category {
+            margin-bottom: 8px;
+        }
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .badge {
+            background: #e8f4fd;
+            color: #0077b5;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Profile Header with Picture -->
-        <div class="profile-header">
-            <img src="likitha.jpeg" alt="Likitha's Photo" class="profile-pic">
-            <h1>Likitha</h1>
-            <p>Software Developer | Tech Enthusiast</p>
-            <p>Email: your.email@example.com | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-        </div>
+        <!-- Header Section -->
+        <header class="header">
+            <img src="likitha.jpeg" alt="Likitha Pureddi" class="profile-pic">
+            <h1>LIKITHA PUREDDI</h1>
+            <div class="contact-info">
+                <span>📞 +91 9182690249</span> | 
+                <span>✉️ <a href="mailto:likithaabhi1750@gmail.com">likithaabhi1750@gmail.com</a></span> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/likitha174" target="_blank">GitHub</a> | 
+                <a href="https://tryhackme.com" target="_blank">TryHackMe</a>
+            </div>
+        </header>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>Write a brief intro summarizing your skills, interests, and career goals.</p>
-        </div>
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Cybersecurity-focused Computer Science undergraduate with hands-on experience in network security, ethical hacking, digital forensics, vulnerability assessment, and cybercrime investigations. Skilled in Python, SQL, Java, and cybersecurity tools including Wireshark, Nmap, Kali Linux, and Autopsy. Strong analytical and problem-solving abilities with practical exposure to 20+ CTF/lab challenges and real-world cyber investigation environments. Seeking Cybersecurity Analyst, SOC Analyst, or Information Security Internship opportunities.
+            </p>
+        </section>
 
-        <div class="section">
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-category"><strong>Programming Languages:</strong> Python, C, Java, SQL, HTML</div>
+            <div class="skills-category"><strong>Cybersecurity:</strong> Network Security, Ethical Hacking, Digital Forensics, Vulnerability Assessment, Incident Response, Packet Analysis, Operating Systems, Database Security</div>
+            <div class="skills-category"><strong>Tools & Platforms:</strong> Wireshark, Nmap, Kali Linux, Autopsy, Recuva, Hancom Mobile Forensics, Oracle SQL, Metadata Analysis Tools, CDR Analysis Tools</div>
+            <div class="skills-category"><strong>Soft Skills:</strong> Problem Solving, Communication, Team Collaboration, Leadership, Time Management</div>
+        </section>
+
+        <!-- Areas of Interest -->
+        <section>
+            <h2>Areas of Interest</h2>
+            <div class="badge-list">
+                <span class="badge">Security Operations Center (SOC)</span>
+                <span class="badge">Digital Forensics</span>
+                <span class="badge">Threat Intelligence</span>
+                <span class="badge">Vulnerability Assessment & Penetration Testing (VAPT)</span>
+                <span class="badge">Incident Response</span>
+                <span class="badge">Network Security</span>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Cyber Crime Investigation Trainee</span>
+                    <span class="item-date">Dec 2025 – Mar 2026</span>
+                </div>
+                <div class="item-subtitle">Cyber Crime Police Department</div>
+                <ul>
+                    <li>Gained hands-on exposure to cybercrime investigation procedures and digital evidence collection across phishing, online fraud, identity theft, and social media misuse cases.</li>
+                    <li>Assisted in analyzing network logs, IP traces, metadata, and digital artifacts to support suspect identification and case tracing.</li>
+                    <li>Learned practical approaches for phishing investigation, online fraud analysis, and incident response workflows alongside cyber police investigators.</li>
+                    <li>Worked with forensic and network analysis tools (Wireshark, Autopsy) to understand real-world incident response and evidence-handling procedures.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Security Equipment Management System</span>
+                    <span class="item-subtitle">Java | SQL Database</span>
+                </div>
+                <ul>
+                    <li>Developed a centralized system to manage security equipment inventory and maintenance activities for a security department.</li>
+                    <li>Designed relational database structures for equipment tracking and record management.</li>
+                    <li>Improved visibility and organization of security assets through automated record maintenance.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Crop Disease Detection System</span>
+                    <span class="item-subtitle">Python | Machine Learning</span>
+                </div>
+                <ul>
+                    <li>Built an image-classification system to identify crop diseases from plant photos and recommend suitable pesticides based on the predicted disease class.</li>
+                    <li>Designed to support early disease detection and reduce crop loss for farmers.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Cybersecurity Practice Labs & CTFs</span>
+                    <span class="item-subtitle">TryHackMe | Kali Linux</span>
+                </div>
+                <ul>
+                    <li>Completed 20+ TryHackMe rooms spanning Networking, Linux, Digital Forensics, Web Application Security, SOC, Defensive & Offensive Security, Cryptography, Phishing Analysis, and DevSecOps.</li>
+                    <li><strong>Junior Security Analyst:</strong> Practiced triaging simulated SIEM alerts and prioritizing incidents by severity.</li>
+                    <li><strong>Defensive Security Intro & Web App Security:</strong> Practiced identifying common web vulnerabilities and defensive monitoring techniques.</li>
+                    <li><strong>Pentesting Fundamentals & Digital Forensics:</strong> Practiced reconnaissance, basic exploitation, and digital evidence acquisition/analysis.</li>
+                    <li><strong>Phishing Analysis:</strong> Practiced identifying phishing indicators in emails and headers.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
             <h2>Education</h2>
-            <h3>Degree Name — University Name</h3>
-            <p>Year of Graduation | Details or CGPA</p>
-        </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">GITAM University</span>
+                    <span class="item-date">2023 – 2027</span>
+                </div>
+                <div>B.Tech - Computer Science Engineering (Cyber Security) | CGPA: 8.18/10</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Pandiit College</span>
+                    <span class="item-date">2021 – 2023</span>
+                </div>
+                <div>Intermediate (MPC) | Score: 9.19</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bhashyam School</span>
+                    <span class="item-date">2020 – 2021</span>
+                </div>
+                <div>SSC Score: 10.0</div>
+            </div>
+        </section>
 
-        <div class="section">
-            <h2>Experience / Projects</h2>
-            <h3>Project / Role Title</h3>
-            <p>Duration or Tech Stack Used</p>
+        <!-- Certifications & Training -->
+        <section>
+            <h2>Certifications & Training</h2>
             <ul>
-                <li>Key responsibility, achievement, or project highlight.</li>
-                <li>Another key detail or feature you built.</li>
+                <li><strong>AWS Training & Certification:</strong> AWS Security Fundamentals (Aug 2026); Getting Started with Amazon Detective (Aug 2026); Penetration Testing for Everyone - Autonomous Security with AWS Security Agent (Jun 2026)</li>
+                <li><strong>Cisco Networking Academy:</strong> Junior Cybersecurity Analyst Career Path; Ethical Hacker Course Completion</li>
+                <li><strong>OAK Academy:</strong> Full Ethical Hacking & Penetration Testing Course</li>
+                <li><strong>C-DAC (MeitY):</strong> Certificate of Participation — Secure Software Development Life Cycle (SSDLC) Practices Seminar, Dec 2025</li>
+                <li><strong>Teachnook:</strong> Cyber Security Mentorship Program, May 2024</li>
+                <li><strong>Cyber Crime Police Station:</strong> Investigation Training Certification (Dec 2025 – Mar 2026)</li>
+                <li><strong>HPCL:</strong> Industrial Internship Certification</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>Skills</h2>
+        <!-- Achievements & Activities -->
+        <section>
+            <h2>Achievements & Activities</h2>
             <ul>
-                <li>Programming Languages: HTML, CSS, JavaScript, etc.</li>
-                <li>Tools & Technologies: Git, GitHub, VS Code</li>
+                <li>Ranked 42nd in Unstop's Weekly Coding Challenge (Challenge 35), representing GITAM — Certificate of Excellence.</li>
+                <li>Participated in GitHub Hackathon programming competitions.</li>
+                <li>Contributed to Smart India Hackathon (SIH) project focused on agricultural soil and weather testing.</li>
+                <li>Continuously learning cybersecurity through hands-on labs, security challenges, and practical investigations.</li>
             </ul>
-        </div>
+        </section>
     </div>
 </body>
 </html>
